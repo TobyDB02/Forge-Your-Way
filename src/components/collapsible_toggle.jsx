@@ -37,8 +37,5 @@ Collapsible.propTypes = {
     title: PropTypes.string.isRequired,
     children: PropTypes.node,
 };
-//hi
-
-
 
 export default Collapsible;
