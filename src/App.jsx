@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
-import "./css/Responsive_button.css"; // We'll define styles here
+import { useState, useEffect, } from "react";
+import "./css/Responsive_button.css";
+
 
 export default function ResponsiveButton() {
     const [width, setWidth] = useState(window.innerWidth);
