@@ -1,16 +1,44 @@
-// App.jsx (or App.tsx if using TypeScript)
-import React from "react";
-import Collapsible from "./components/collapsible_toggle.jsx"; // adjust path if needed
+import { useState, useEffect } from "react";
+import "./ResponsiveButton.css"; // We'll define styles here
 
-const App = () => {
+export default function ResponsiveButton() {
+    const [width, setWidth] = useState(window.innerWidth);
+    const [isOpen, setIsOpen] = useState(false);
+
+    // Track window resize
+    useEffect(() => {
+        const handleResize = () => setWidth(window.innerWidth);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    // Mobile
+    if (width < 600) {
+        return (
+            <div className="mobile">
+                <button>Hello Button</button>
+                <div className="mobile-text">Hello World</div>
+            </div>
+        );
+    }
+
+    // Tablet
+    if (width < 1024) {
+        return (
+            <div className="tablet">
+                <button>Hello Button</button>
+                <div className="tablet-text">Hello World</div>
+            </div>
+        );
+    }
+
+    // Desktop (collapsible)
     return (
-        <div>
-            <h1>My App</h1>
-            <Collapsible title="More Info" open={true}>
-                <p>This section can be toggled.</p>
-            </Collapsible>
+        <div className="desktop">
+            <button onClick={() => setIsOpen(!isOpen)}>
+                {isOpen ? "Hide" : "Show"} Message
+            </button>
+            {isOpen && <div className="desktop-text">Hello World</div>}
         </div>
     );
-};
-
-export default App;
+}
