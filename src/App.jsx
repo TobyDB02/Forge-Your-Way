@@ -1,18 +1,16 @@
 import { useState, useEffect } from "react";
-import ".css/Responsive_button.css"; // We'll define styles here
+import "./css/Responsive_button.css"; // We'll define styles here
 
 export default function ResponsiveButton() {
     const [width, setWidth] = useState(window.innerWidth);
     const [isOpen, setIsOpen] = useState(false);
 
-    // Track window resize
     useEffect(() => {
         const handleResize = () => setWidth(window.innerWidth);
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    // Mobile
     if (width < 600) {
         return (
             <div className="mobile">
@@ -22,7 +20,6 @@ export default function ResponsiveButton() {
         );
     }
 
-    // Tablet
     if (width < 1024) {
         return (
             <div className="tablet">
@@ -32,7 +29,6 @@ export default function ResponsiveButton() {
         );
     }
 
-    // Desktop (collapsible)
     return (
         <div className="desktop">
             <button onClick={() => setIsOpen(!isOpen)}>
