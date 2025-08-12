@@ -1,31 +1,47 @@
-.mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.mobile-text {
+/* Base styles */
+.responsive-button button {
     font-size: 1rem;
-    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
 }
 
-.tablet {
-    display: flex;
-    align-items: center;
-}
-
-.tablet-text {
-    margin-left: 1rem;
+.message {
     font-size: 1rem;
+    color: #333;
 }
 
-.desktop {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+/* Mobile: show message below button */
+@media (max-width: 599px) {
+    .responsive-button {
+        display: block;
+    }
+    .message {
+        display: block;
+        margin-top: 0.5rem;
+    }
 }
 
-.desktop-text {
-    margin-top: 0.5rem;
-    font-size: 1rem;
+/* Tablet: show message to the right of button */
+@media (min-width: 600px) and (max-width: 1023px) {
+    .responsive-button {
+        display: flex;
+        align-items: center;
+    }
+    .message {
+        margin-left: 1rem;
+        display: block;
+    }
+}
+
+/* Desktop: message toggled with button */
+@media (min-width: 1024px) {
+    .responsive-button {
+        display: block;
+    }
+    .message {
+        display: none;
+        margin-top: 0.5rem;
+    }
+    .message.open {
+        display: block;
+    }
 }
