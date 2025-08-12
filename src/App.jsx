@@ -1,5 +1,5 @@
 import React from "react";
-import ResponsiveButton from "./components/ResponsiveButton";
+import ResponsiveButton from "./components/ResponsiveButton.jsx";
 
 export default function App() {
     return (
