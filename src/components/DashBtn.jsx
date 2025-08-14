@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../css/dashButton.css"
+import "../styles/dashButton.css"
 
 export default function DashBtn({ children }) {
     const [isSelected, setIsSelected] = useState(false);
