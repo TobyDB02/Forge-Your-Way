@@ -1,4 +1,10 @@
-.flexbox-container {
+.container-row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container-dash {
+    justify-content: right;
+    padding-right: 1vw
 }

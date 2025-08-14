@@ -1,0 +1,23 @@
+.textButton {
+    font-size: 1vw;
+    text-align: center;
+    color: white;
+}
+
+.textButton:hover {}
+
+.textButton:active {}
+
+.textButton:disabled {}
+
+.textButton-dash {
+    font-size: 1.2vw;
+    font-weight: bold;
+    font-family: roman, serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.textButton-dash:hover {
+    color: #393f8a;
+}

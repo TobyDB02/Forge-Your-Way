@@ -1,12 +1,10 @@
-/* index.styles */
+
 :root {
   font-family: system-ui, sans-serif;
   color-scheme: light dark;
-  background-color: #1e1e1e;
-  color: white;
-  --font-base: clamp(7px, 2vw, 14px);
-  --font-large: calc(var(--font-base) * 1.29);
-  --font-title: calc(var(--font-base) * 2.57);
+  background-color: #ffffff;
+  color: black;
+  font-size: 1vw;
   }
 
 body {
