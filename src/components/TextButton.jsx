@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../styles/dashButton.css"
 
-export default function DashBtn({ children }) {
+export default function TextButton({ children }) {
     const [isSelected, setIsSelected] = useState(false);
 
     return (
