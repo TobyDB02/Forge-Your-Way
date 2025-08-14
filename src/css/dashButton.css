@@ -1,0 +1,11 @@
+.dashButton {
+    color: aliceblue;
+}
+
+.dashButton:hover {
+    color: darkorchid;
+}
+
+.dashButton-page {
+    color: darkorchid;
+}

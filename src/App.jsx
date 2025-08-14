@@ -1,11 +1,13 @@
 import React from "react";
-import ResponsiveButton from "./components/ResponsiveButton.jsx";
+import DashBtn from "./components/DashBtn.jsx";
 
 export default function App() {
     return (
-        <div className="App">
-            <h1>Welcome to My Responsive App</h1>
-            <ResponsiveButton />
+        <div className="App" align="center">
+            <h1>Forge... Your Way!</h1>
+            <DashBtn >
+                About Me
+            </DashBtn>
         </div>
     );
 }
