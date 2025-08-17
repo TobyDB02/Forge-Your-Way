@@ -1,7 +1,7 @@
 
 .rectangle {
     display: flex;
-    background-color: #F5AD1C;
+    background-color: goldenrod;
     border-radius: 0.5vw;
     border: 0.2vw solid #2E3363;
     width: fit-content;

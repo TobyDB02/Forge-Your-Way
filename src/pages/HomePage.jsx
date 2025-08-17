@@ -1,4 +1,4 @@
-
+import FYW from
 import Dashboard from "../frames/Dashboard.jsx";
 
 export default function HomePage() {
