@@ -1,17 +1,13 @@
-import { useState } from "react";
+
+import { Link } from "react-router-dom";
 import "../styles/textButton.css"
 
-export default function TextButton({ children }) {
-    const [isSelected, setIsSelected] = useState(false);
-
+export default function TextButton({ children, to }) {
     return (
         <div className="textButton textButton-dash">
-            <span onClick={() => setIsSelected(!isSelected)}
-            style={{ cursor: "pointer" }}>
+            <Link to={to} style={{ textDecoration: "none", color: "inherit" }}>
                 {children}
-            </span>
-            <div className={`dashBtn ${isSelected ? "open" : ""}`}>
-            </div>
+            </Link>
         </div>
-    )
+    );
 }
