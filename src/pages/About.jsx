@@ -11,7 +11,7 @@ export default function About() {
             <Link to={"/"}>
                 <img src={FYW}/>
             </Link>
-            <div className="container-row">
+            <div align="center" className="container-row">
                 <div>
                     <Dashboard/>
                 </div>
