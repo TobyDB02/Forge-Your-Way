@@ -10,3 +10,8 @@
 body {
   margin: 0;
 }
+
+.img-fluid {
+  width: 20vw;   /* takes up 20% of the viewport width */
+  height: auto;  /* keeps aspect ratio */
+}
