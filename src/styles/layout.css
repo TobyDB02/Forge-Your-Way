@@ -5,7 +5,46 @@
     justify-content: center;
 }
 
+.container-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
 .container-dash {
     justify-content: right;
     padding-right: 1vw
+}
+
+.homepage .dash-content {
+    max-width: 50vw;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 80vw;
+}
+
+.dashboard-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.content-wrapper .rectangle {
+    width: 100%;
+    max-width: 100%;
 }

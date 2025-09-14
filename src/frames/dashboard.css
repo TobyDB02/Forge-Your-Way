@@ -1,11 +1,11 @@
-
-.rectangle {
+.dashboard-container {
     display: flex;
-    background-color: #F5AD1C;
-    border-radius: 0.5vw;
-    border: 0.2vw solid #2E3363;
-    width: fit-content;
-    gap: 2vw;
-    align-items: center;
-    padding: 1vw 2vw
+    justify-content: center;
+    width: 100%;
+}
+
+.dashboard-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }

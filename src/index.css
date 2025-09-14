@@ -12,6 +12,23 @@ body {
 }
 
 .img-fluid {
-  width: 20vw;   /* takes up 20% of the viewport width */
-  height: auto;  /* keeps aspect ratio */
+  width: 20vw;
+  height: auto;
+}
+
+.rectangle {
+  display: inline-flex;
+  background-color: #F5AD1C;
+  border-radius: 0.5vw;
+  border: 0.2vw solid #2E3363;
+  width: fit-content;
+  gap: 2vw;
+  align-items: center;
+  padding: 1vw 2vw
+}
+
+.text {
+  font-size: 1vw;
+  text-align: center;
+  color: white;
 }

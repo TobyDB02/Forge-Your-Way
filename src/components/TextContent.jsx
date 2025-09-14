@@ -1,4 +1,13 @@
+import "../styles/textContent.css"
 
-import "../styles/textCOntent.css"
-
-return
+export default function TextContent({ children, className, width }) {
+    return (
+        <div className={"rectangle text " + (className || "")}
+             style={{
+                 fontWeight: "bold",
+                 color: "#2E3363",
+                 ...width ? { width } : {}}}>
+            {children}
+        </div>
+    )
+}

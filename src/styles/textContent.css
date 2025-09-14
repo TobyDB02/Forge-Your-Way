@@ -1,0 +1,12 @@
+.dash-content {
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    text-wrap: wrap;
+}
+
+.rectangle.text {
+    display: block;
+    padding: 2rem;
+    text-align: left;
+}
