@@ -9,6 +9,7 @@ import TextContent from "../components/TextContent.jsx";
 import ilm from "../assets/ilm_lv7.png";
 import WoaCS from "../assets/WoaCS.png";
 import Contact from "../frames/Contact.jsx";
+import Reviews from "../frames/Reviews.jsx";
 
 export default function About() {
     const page = 1
@@ -23,7 +24,7 @@ export default function About() {
                 </div>
                 <div className="content-wrapper">
                     <TextContent>
-                        <div className="container-row">
+                        <div className="container-row" style={{ gap: "2rem" }}>
                         <div className="container-col" style={{ gap: "2rem" }}>
                             <img src={ilm} alt="ILM" className="textcontent-img" />
                             <img src={WoaCS} alt="WoaCS" className="textcontent-img" />
@@ -52,6 +53,7 @@ export default function About() {
                     </TextContent>
                 </div>
             </div>
+            <Reviews/>
             <Contact/>
         </div>
     )
