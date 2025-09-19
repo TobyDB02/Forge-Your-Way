@@ -5,13 +5,14 @@ import Meno_img from "../assets/Meno_img.png";
 import {Link} from "react-router-dom";
 import React from "react";
 import TextContent from "../components/TextContent.jsx";
+import Contact from "../frames/Contact.jsx";
 
 export default function MenopauseCoaching() {
     const page = 2
     return (
-        <div align="center">
+        <div align="center" className="container-col" style={{gap: "2rem"}}>
             <Link to={"/"}>
-                <img src={FYW} className="img-fluid" alt="Find Your Way logo"/>
+                <img src={FYW} className="img-fluid" alt="Find Your Way logo" style={{marginTop: "1rem"}}/>
             </Link>
             <div className="about-container">
                 <div className="dashboard-wrapper">
@@ -42,6 +43,7 @@ export default function MenopauseCoaching() {
                     </TextContent>
                 </div>
             </div>
+            <Contact/>
         </div>
     )
 }

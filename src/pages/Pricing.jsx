@@ -4,13 +4,14 @@ import "../styles/layout.css"
 import {Link} from "react-router-dom";
 import React from "react";
 import TextContent from "../components/TextContent.jsx";
+import Contact from "../frames/Contact.jsx";
 
 export default function Pricing() {
     const page = 4
     return (
-        <div align="center">
+        <div align="center" className="container-col" style={{gap: "2rem"}}>
             <Link to={"/"}>
-                <img src={FYW} className="img-fluid" alt="Find Your Way logo"/>
+                <img src={FYW} className="img-fluid" alt="Find Your Way logo" style={{marginTop: "1rem"}}/>
             </Link>
             <div className="about-container">
                 <div className="dashboard-wrapper">
@@ -41,6 +42,7 @@ export default function Pricing() {
                     </TextContent>
                 </div>
             </div>
+            <Contact/>
         </div>
     )
 }

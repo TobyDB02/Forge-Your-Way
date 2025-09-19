@@ -1,17 +1,21 @@
 import Dashboard from "../frames/Dashboard.jsx";
 import "../styles/layout.css"
 import "../index.css"
+import "../styles/textContent.css"
 import FYW from "../assets/FYW.png";
 import {Link} from "react-router-dom";
 import React from "react";
 import TextContent from "../components/TextContent.jsx";
+import ilm from "../assets/ilm_lv7.png";
+import WoaCS from "../assets/WoaCS.png";
+import Contact from "../frames/Contact.jsx";
 
 export default function About() {
     const page = 1
     return (
-        <div align="center">
+        <div align="center" className="container-col" style={{gap: "2rem"}}>
             <Link to={"/"}>
-                <img src={FYW} className="img-fluid" alt="Find Your Way logo" />
+                <img src={FYW} className="img-fluid" alt="Find Your Way logo" style={{marginTop: "1rem"}}/>
             </Link>
             <div className="about-container">
                 <div className="dashboard-wrapper">
@@ -19,6 +23,11 @@ export default function About() {
                 </div>
                 <div className="content-wrapper">
                     <TextContent>
+                        <div className="container-row">
+                        <div className="container-col" style={{ gap: "2rem" }}>
+                            <img src={ilm} alt="ILM" className="textcontent-img" />
+                            <img src={WoaCS} alt="WoaCS" className="textcontent-img" />
+                        </div>
                         I've spent nearly 30 years working in senior HR roles, and for the last decade I've been an ILM Level 7 qualified coach—helping people find their own
                         answers, break through challenges, and achieve what matters most to them.
                         <br/><br/>
@@ -39,9 +48,11 @@ export default function About() {
                         whether you're in perimenopause, menopause, or beyond.
                         <br/><br/>
                         The women I've supported tell me they feel informed, empowered, and more like themselves again. I'd love to help you feel that way too.
+                        </div>
                     </TextContent>
                 </div>
             </div>
+            <Contact/>
         </div>
     )
 }

@@ -6,11 +6,12 @@ import "../styles/layout.css"
 import "../styles/textContent.css"
 import TextContent from "../components/TextContent.jsx";
 import React from "react";
+import Contact from "../frames/Contact.jsx";
 
 export default function HomePage() {
     return (
         <div align="center">
-            <img src={FYW} className="img-fluid"/>
+            <img src={FYW} className="img-fluid" style={{marginTop: "1rem"}}/>
             <div className="container-row">
                 <img src={Homeimg} className="img-fluid"/>
                 <div style={{padding: "1vw"}}>
@@ -36,6 +37,7 @@ export default function HomePage() {
                     </TextContent>
                 </div>
             </div>
+            <Contact/>
         </div>
     )
 }

@@ -1,17 +1,18 @@
 import Dashboard from "../frames/Dashboard.jsx";
+import TextContent from "../components/TextContent.jsx";
+import Contact from "../frames/Contact.jsx";
 import "../styles/layout.css"
 import FYW from "../assets/FYW.png";
 import Midl_img from "../assets/Midl_img.png";
 import {Link} from "react-router-dom";
 import React from "react";
-import TextContent from "../components/TextContent.jsx";
 
 export default function MidlifeCoaching() {
     const page = 3;
     return (
-        <div align="center">
+        <div align="center" className="container-col" style={{gap: "2rem"}}>
             <Link to={"/"}>
-                <img src={FYW} className="img-fluid" alt="Find Your Way logo"/>
+                <img src={FYW} className="img-fluid" alt="Find Your Way logo" style={{marginTop: "1rem"}}/>
             </Link>
             <div className="container-row">
                 <div className="about-container">
@@ -37,7 +38,7 @@ export default function MidlifeCoaching() {
                     </div>
                 </div>
             </div>
-
+            <Contact/>
         </div>
     )
 }
