@@ -1,7 +1,7 @@
 .container-row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    align-items: stretch;
     justify-content: center;
 }
 
@@ -18,19 +18,35 @@
     padding-right: 1vw
 }
 
+.container-img {
+    display: flex;
+    align-items: stretch;
+}
+
+
+.container-img img.tall-img {
+    height: 100%;        /* 🔑 Match the height of .about-container */
+    width: auto;         /* Maintain aspect ratio */
+    object-fit: cover;   /* Optional: crop image if it overflows width */
+    display: block;
+}
+
+
 .homepage .dash-content {
     max-width: 50vw;
 }
 
 .about-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* or center if preferred */
+    flex: 1;
     gap: 1rem;
     margin-top: 1rem;
     width: 100%;
     max-width: 80vw;
 }
+
 
 .dashboard-wrapper {
     display: flex;

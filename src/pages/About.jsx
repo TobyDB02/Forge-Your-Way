@@ -7,14 +7,15 @@ import React from "react";
 import TextContent from "../components/TextContent.jsx";
 
 export default function About() {
+    const page = 1
     return (
         <div align="center">
             <Link to={"/"}>
-                <img src={FYW} className="img-fluid" alt="Find Your Way logo"/>
+                <img src={FYW} className="img-fluid" alt="Find Your Way logo" />
             </Link>
             <div className="about-container">
                 <div className="dashboard-wrapper">
-                    <Dashboard/>
+                    <Dashboard page={page}/>
                 </div>
                 <div className="content-wrapper">
                     <TextContent>

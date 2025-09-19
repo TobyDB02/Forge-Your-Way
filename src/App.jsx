@@ -12,10 +12,10 @@ export default function App() {
         <Router>
             <Routes>
                 <Route path="/" element={<HomePage />} />
-                <Route path={"/about"} element={<About/>} />
-                <Route path={"/menopause"} element={<MenoPauseCoaching/>} />
-                <Route path={"/midlife"} element={<MidlifeCoaching/>} />
-                <Route path={"/pricing"} element={<Pricing/>} />
+                <Route path={"/about"} element={<About />} />
+                <Route path={"/menopause"} element={<MenoPauseCoaching />} />
+                <Route path={"/midlife"} element={<MidlifeCoaching />} />
+                <Route path={"/pricing"} element={<Pricing />} />
                 <Route path="*" element={<h1>404 Not Found</h1>} />
             </Routes>
         </Router>

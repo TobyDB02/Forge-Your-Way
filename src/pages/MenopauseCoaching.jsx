@@ -1,11 +1,13 @@
 import Dashboard from "../frames/Dashboard.jsx";
 import "../styles/layout.css"
 import FYW from "../assets/FYW.png";
+import Meno_img from "../assets/Meno_img.png";
 import {Link} from "react-router-dom";
 import React from "react";
 import TextContent from "../components/TextContent.jsx";
 
 export default function MenopauseCoaching() {
+    const page = 2
     return (
         <div align="center">
             <Link to={"/"}>
@@ -13,10 +15,11 @@ export default function MenopauseCoaching() {
             </Link>
             <div className="about-container">
                 <div className="dashboard-wrapper">
-                    <Dashboard/>
+                    <Dashboard page={page}/>
                 </div>
                 <div className="content-wrapper">
-                    <TextContent>
+                    <TextContent image={Meno_img}>
+                        <ul>
                         Coaching is a deeply personal experience so deciding who you would like to work with you is very important. I pride myself on being a professional, trained, experienced and empathetic coach who will support, challenge and encourage you throughout our time together to achieve the results you want to achieve.
                         <br/><br/>
                         Before we start you will have a free 30 min discovery call to enable you to decide if coaching is right for you and whether I am the right person for you.
@@ -24,7 +27,7 @@ export default function MenopauseCoaching() {
                         I will be your trusted partner to hear, listen and understand your own experience and invite you to take forward actions that will be right for you and have the greatest impact on your life today.
                         <br/><br/>
                         If you chose to work with me, you will:
-                        <ul style={{ textAlign: 'left', paddingLeft: '2rem', margin: '1rem 0' }}>
+                            <br/><br/>
                             <li>Feel informed about the menopause and your unique experience</li>
                             <li>Feel listened to, heard and supported</li>
                             <li>Discover the small, incremental changes that work for you</li>

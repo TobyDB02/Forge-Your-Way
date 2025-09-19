@@ -6,7 +6,55 @@
 }
 
 .rectangle.text {
-    display: block;
-    padding: 2rem;
+    display: flex;
+    align-items: stretch;   /* image + text same height */
+    padding: 0;             /* remove padding here, handle inside */
     text-align: left;
+    gap: 1rem;              /* spacing between image + text */
 }
+
+.rectangle.text ul {
+    text-align: left;     /* force bullets/text to align left */
+    padding-left: 2rem;   /* indent once */
+    margin: 1rem 0 0 0;   /* space above the list */
+    list-style-position: outside; /* keep bullets outside the text block */
+}
+
+.rectangle.text li {
+    margin-bottom: 0.5rem; /* spacing between bullets */
+}
+
+.textcontent-img {
+    flex: 0 0 30%;         /* takes up 30% of the rectangle width */
+    max-width: 300px;      /* optional cap */
+    display: flex;
+}
+
+.textcontent-img img {
+    width: 100%;           /* scale with width */
+    height: auto;          /* keep aspect ratio */
+    object-fit: cover;     /* crop if needed */
+    border-radius: 0.5vw 0 0 0.5vw;
+}
+
+/* Text container */
+.textcontent-body {
+    flex: 1;                 /* take remaining space */
+    padding: 2rem;
+    overflow-wrap: break-word;
+    display: flex;
+    align-items: center;     /* vertically center text */
+    font-size: 1vw;
+}
+
+.textcontent-body ul {
+    list-style-type: disc;       /* normal bullets */
+    padding-left: 2rem;          /* indent from the left */
+    margin: 1rem 0 0 0;          /* space above list */
+    text-align: left;            /* align list items left */
+}
+
+.textcontent-body li {
+    margin-bottom: 0.5rem;       /* space between bullets */
+}
+

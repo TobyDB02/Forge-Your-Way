@@ -12,8 +12,9 @@ body {
 }
 
 .img-fluid {
-  width: 20vw;
+  width: auto;
   height: auto;
+  display: block;
 }
 
 .rectangle {
