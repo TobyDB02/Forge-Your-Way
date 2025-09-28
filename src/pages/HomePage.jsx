@@ -13,27 +13,30 @@ export default function HomePage() {
         <div align="center">
             <img src={FYW} className="img-fluid" style={{marginTop: "1rem"}}/>
             <div className="container-row">
-                <img src={Homeimg} className="img-fluid"/>
                 <div style={{padding: "1vw"}}>
                     <Dashboard/>
-                    <TextContent className="dash-content">
-                        Thrive through midlife, menopause and beyond...
-                        <br/><br/>
-                        One to one transformative coaching leading to:
-                        <ul style={{ textAlign: 'left', paddingLeft: '2rem', margin: '1rem 0' }}>
-                            <li>A renewed sense of purpose</li>
-                            <li>A renewed sense of self</li>
-                            <li>Reconnection with past joys</li>
-                        </ul>
-                        <br/><br/>
-                        Whether you are feeling overwhelmed with menopause symptoms, feeling you've lost your sense of
-                        self or navigating the many ups and downs of midlife, I'm here to tell you that you are not
-                        alone and that it is absolutely possible for you to move forward, achieve your goals and thrive
-                        as you transform through midlife, menopause and beyond.
-                        <br/><br/>
-                        I am both an accredited Coach and a Certified Menopause Coach and offer a range of 1-2-1
-                        coaching sessions so do please reach out so we can chat through the different options what might
-                        work best for you.
+                    <TextContent image={Homeimg} className="dash-content" style={{ backgroundColor: "white", borderColor: "white" }}>
+                        <div>
+                            <ul>
+                                Thrive through midlife, menopause and beyond...
+                                <br/><br/>
+                                One to one transformative coaching leading to:
+                                <ul style={{ textAlign: 'left', paddingLeft: '2rem', margin: '1rem 0' }}>
+                                    <li>A renewed sense of purpose</li>
+                                    <li>A renewed sense of self</li>
+                                    <li>Reconnection with past joys</li>
+                                </ul>
+                                <br/><br/>
+                                Whether you are feeling overwhelmed with menopause symptoms, feeling you’ve lost your sense of
+                                self, or navigating the many ups and downs of midlife, I’m here to tell you that you are not
+                                alone and that it is possible for you to move forward, achieve your goals and thrive as you
+                                transition through midlife, menopause and beyond.
+                                <br/><br/>
+                                I am both an Accredited Coach and Certified Menopause Coach, and offer a range of one- to- one
+                                coaching sessions so do please reach out so that we can chat through the different options and
+                                what might work best for you.
+                            </ul>
+                        </div>
                     </TextContent>
                 </div>
             </div>

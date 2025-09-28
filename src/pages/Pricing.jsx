@@ -18,27 +18,67 @@ export default function Pricing() {
                     <Dashboard page={page}/>
                 </div>
                 <div className="content-wrapper">
-                    <TextContent>
-                        I've spent nearly 30 years working in senior HR roles, and for the last decade I've been an ILM Level 7 qualified coach—helping people find their own
-                        answers, break through challenges, and achieve what matters most to them.
-                        <br/><br/>
-                        My real passion? Supporting women through midlife and menopause.
-                        <br/><br/>
-                        After my own difficult experience—navigating poor sleep, brain fog, anxiety, exhaustion, and a sense of "losing myself" I decided to train as a
-                        certified menopause coach. Like so many women, I kept going, somehow holding everything together, but never feeling I was truly thriving.
-                        <br/><br/>
-                        Learning about how hormones, nutrition, hydration, and small incremental lifestyle changes could completely shift my experience was life-changing.
-                        <br/><br/>
-                        I began to feel more like me again—vibrant, confident, and in control.
-                        <br/><br/>
-                        And I want that for you too.
-                        <br/><br/>
-                        Menopause is different for every woman, but one thing I hear over and over is the wish to "get back to myself." That's where I come in.
-                        <br/><br/>
-                        I'll work with you to understand what's going on in your body, help you recognise what's possible, and create a plan that works for you—
-                        whether you're in perimenopause, menopause, or beyond.
-                        <br/><br/>
-                        The women I've supported tell me they feel informed, empowered, and more like themselves again. I'd love to help you feel that way too.
+                    <TextContent style={{ backgroundColor: "white", borderColor: "white" }}>
+                        <ul>
+                            Before we start you will have a free 30 min discovery call to enable you to decide if
+                            coaching is right for you and whether I am the right person for you.
+                            <br/><br/>
+                            <div className={"rectangle"} style={{height: "0.2rem", borderWidth: 0, margin: 0,
+                                padding: 0,}}>
+                            </div>
+                            <br/><br/>
+                            <b>Midlife & Ad Hoc Coaching - £65 per session</b>
+                            <br/><br/>
+                            Midlife brings many and varied challenges and opportunities.  From career, family to life
+                            and lifestyle choices and changes.  Whatever you are looking to achieve, coaching will
+                            enable you to identify goals, overcome challenges and move forward with clarity and purpose.
+                            <br/><br/>
+                            Minimum 3 sessions @ 60 mins
+                            <br/><br/>
+                            Typically delivered over 3 to 6
+                            <br/><br/>
+                            <div className={"rectangle"} style={{height: "0.2rem", borderWidth: 0, margin: 0,
+                                padding: 0,}}>
+                            </div>
+                            <br/><br/>
+                            Understanding the Menopause - £30
+                            <br/><br/>
+                            Knowledge is power - a virtual 45 mins call to chat through your experience and help
+                            de-mystify perimenopause and menopause and leave you with a better  understanding of some of
+                            the potential factors that can help or hinder your journey.
+                            <br/><br/>
+                            Virtual 45 mins
+                            <br/><br/>
+                            <div className={"rectangle"} style={{height: "0.2rem", borderWidth: 0, margin: 0,
+                                padding: 0,}}>
+                            </div>
+                            <br/><br/>
+                            Most of us are ageing through the next phase of our lives.  We are at the age where we see
+                            wrinkles, grey hair and extra pounds.
+                            <br/><br/>
+                            We have less youth and zest, but we have wisdom and experience.
+                            <br/><br/>
+                            We have raised families, run households, paid the bills, dealt with diseases, sadness and
+                            everything else life has assigned us.
+                            <br/><br/>
+                            Some of us have lost those that were nearest and dearest to us.
+                            <br/><br/>
+                            We are survivors.
+                            <br/><br/>
+                            We are warriors in the quiet.
+                            <br/><br/>
+                            We are women, like a fine wine or classic car.
+                            <br/><br/>
+                            Even if our bodies aren’t what they once were, they carry our souls, our courage and our
+                            strength.
+                            <br/><br/>
+                            We shall enter this chapter in our lives with humility, grace and pride over everything we
+                            have been through and, we should never feel bad about getting older.
+                            <br/><br/>
+                            It’s a privilege that is denied to so many.
+                            <br/><br/>
+                            Author unknown.
+                        </ul>
                     </TextContent>
                 </div>
             </div>
