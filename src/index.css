@@ -18,14 +18,15 @@ body {
 }
 
 .rectangle {
-  display: inline-flex;
+  flex-wrap: wrap;
   background-color: #F5AD1C;
   border-radius: 0.5vw;
   border: 0.2vw solid #2E3363;
   width: fit-content;
   gap: 2vw;
-  align-items: center;
-  padding: 1vw 2vw
+  padding: 1vw;
+  display: flex;
+  align-items: flex-start;
 }
 
 .text {

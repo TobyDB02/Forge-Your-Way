@@ -15,8 +15,14 @@ export default function Contact() {
                 <div className="container-row">
                     <div className="textcontent-img">
                         <div className="container-row" style={{ gap: "2rem" }}>
-                            <img src={ilm} alt="ILM" style={{ width: "20vw", height: "auto", padding: 0 }}/>
-                            <img src={WoaCS} alt="WoaCS" style={{ width: "10vw", height: "auto", padding: 0 }}/>
+                            <div className={'textcontent-img'}>
+                                <img src={ilm} alt="ILM" style={{ width: "20vw", height: "auto", padding: 0 }}/>
+
+                            </div>
+
+                            <div className={'textcontent-img'}>
+                                <img src={WoaCS} alt="WoaCS" style={{ width: "10vw", height: "auto", padding: 0 }}/>
+                            </div>
                         </div>
                     </div>
                     <div className="container-row" style={{ gap: "2rem" }}>

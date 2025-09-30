@@ -55,8 +55,8 @@ export default function About() {
                     </TextContent>
                 </div>
             </div>
-            <div className={'rectangle'} style={{borderWidth: 0, width:'100%', borderRadius: 0}}>
-                <h1>
+            <div className={'rectangle'} style={{borderWidth: 0, width:'100%', maxWidth: '100vw', borderRadius: 0, padding: '0 0 0 3vw', margin: 0, boxSizing: 'border-box'}}>
+                <h1 style={{fontFamily: 'Brush Script MT', fontSize: '3vw'}}>
                     From those who say it best...
                 </h1>
             </div>

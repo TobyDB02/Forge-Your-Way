@@ -9,7 +9,7 @@ export default function TextContent({ children, className, width, image, style }
                  ...(width ? { width } : {}),
                  ...style }}>
             {image && (
-                <div className="textcontent-img">
+                <div className="textcontent-img" style={{maxWidth: '20vw', width: '20vw'}}>
                     <img src={image} alt="Decorative" />
                 </div>
             )}
