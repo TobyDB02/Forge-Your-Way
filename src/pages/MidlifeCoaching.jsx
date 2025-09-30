@@ -1,6 +1,7 @@
 import Dashboard from "../frames/Dashboard.jsx";
 import TextContent from "../components/TextContent.jsx";
 import Contact from "../frames/Contact.jsx";
+import Reviews from "../frames/Reviews.jsx";
 import "../styles/layout.css"
 import FYW from "../assets/FYW.png";
 import Midl_img from "../assets/Midl_img.png";
@@ -39,6 +40,12 @@ export default function MidlifeCoaching() {
                     </div>
                 </div>
             </div>
+            <div className={'rectangle'} style={{borderWidth: 0, width:'100%', borderRadius: 0}}>
+                <h1>
+                    From those who say it best...
+                </h1>
+            </div>
+            <Reviews/>
             <Contact/>
         </div>
     )

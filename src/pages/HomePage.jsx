@@ -7,10 +7,11 @@ import "../styles/textContent.css"
 import TextContent from "../components/TextContent.jsx";
 import React from "react";
 import Contact from "../frames/Contact.jsx";
+import Reviews from "../frames/Reviews.jsx";
 
 export default function HomePage() {
     return (
-        <div align="center">
+        <div align="center" className="container-col" style={{gap: "2rem"}}>
             <img src={FYW} className="img-fluid" style={{marginTop: "1rem"}}/>
             <div className="container-row">
                 <div style={{padding: "1vw"}}>
@@ -40,6 +41,12 @@ export default function HomePage() {
                     </TextContent>
                 </div>
             </div>
+            <div className={'rectangle'} style={{borderWidth: 0, width:'100%', borderRadius: 0}}>
+                <h1>
+                    From those who say it best...
+                </h1>
+            </div>
+            <Reviews/>
             <Contact/>
         </div>
     )

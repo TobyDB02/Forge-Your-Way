@@ -50,6 +50,11 @@ export default function MenopauseCoaching() {
                     </TextContent>
                 </div>
             </div>
+            <div className={'rectangle'} style={{borderWidth: 0, width:'100%', borderRadius: 0}}>
+                <h1>
+                    From those who say it best...
+                </h1>
+            </div>
             <Reviews/>
             <Contact/>
         </div>

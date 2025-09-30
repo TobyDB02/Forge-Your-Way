@@ -1,5 +1,6 @@
 import FYW from "../assets/FYW.png"
 import Dashboard from "../frames/Dashboard.jsx";
+import Reviews from "../frames/Reviews.jsx";
 import "../styles/layout.css"
 import {Link} from "react-router-dom";
 import React from "react";
@@ -35,7 +36,7 @@ export default function Pricing() {
                             <br/><br/>
                             Minimum 3 sessions @ 60 mins
                             <br/><br/>
-                            Typically delivered over 3 to 6
+                            Typically delivered over 3 to 6 weeks
                             <br/><br/>
                             <div className={"rectangle"} style={{height: "0.2rem", borderWidth: 0, margin: 0,
                                 padding: 0,}}>
@@ -52,36 +53,16 @@ export default function Pricing() {
                             <div className={"rectangle"} style={{height: "0.2rem", borderWidth: 0, margin: 0,
                                 padding: 0,}}>
                             </div>
-                            <br/><br/>
-                            Most of us are ageing through the next phase of our lives.  We are at the age where we see
-                            wrinkles, grey hair and extra pounds.
-                            <br/><br/>
-                            We have less youth and zest, but we have wisdom and experience.
-                            <br/><br/>
-                            We have raised families, run households, paid the bills, dealt with diseases, sadness and
-                            everything else life has assigned us.
-                            <br/><br/>
-                            Some of us have lost those that were nearest and dearest to us.
-                            <br/><br/>
-                            We are survivors.
-                            <br/><br/>
-                            We are warriors in the quiet.
-                            <br/><br/>
-                            We are women, like a fine wine or classic car.
-                            <br/><br/>
-                            Even if our bodies aren’t what they once were, they carry our souls, our courage and our
-                            strength.
-                            <br/><br/>
-                            We shall enter this chapter in our lives with humility, grace and pride over everything we
-                            have been through and, we should never feel bad about getting older.
-                            <br/><br/>
-                            It’s a privilege that is denied to so many.
-                            <br/><br/>
-                            Author unknown.
                         </ul>
                     </TextContent>
                 </div>
             </div>
+            <div className={'rectangle'} style={{borderWidth: 0, width:'100%', borderRadius: 0}}>
+                <h1>
+                    From those who say it best...
+                </h1>
+            </div>
+            <Reviews/>
             <Contact/>
         </div>
     )
