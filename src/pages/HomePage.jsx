@@ -12,7 +12,7 @@ import Reviews from "../frames/Reviews.jsx";
 export default function HomePage() {
     return (
         <div align="center" className="container-col" style={{gap: "2rem"}}>
-            <img src={FYW} className="img-fluid" style={{marginTop: "1rem"}}/>
+            <img src={FYW} className="img-fluid" style={{marginTop: "1rem", width: "100%", maxWidth: '30vw'}} />
             <div className="container-row">
                 <div style={{padding: "1vw"}}>
                     <Dashboard/>

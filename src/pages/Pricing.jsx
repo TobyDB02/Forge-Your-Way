@@ -13,7 +13,7 @@ export default function Pricing() {
     return (
         <div align="center" className="container-col" style={{gap: "2rem"}}>
             <Link to={"/"}>
-                <img src={FYW} className="img-fluid" alt="Find Your Way logo" style={{marginTop: "1rem"}}/>
+                <img src={FYW} className="img-fluid" style={{marginTop: "1rem", width: "100%", maxWidth: '30vw'}} />
             </Link>
             <div className="about-container">
                 <div className="dashboard-wrapper">
@@ -29,12 +29,16 @@ export default function Pricing() {
                                     Close to Attleborough, Norfolk.
                                     <br/><br/>
                                     <ul style={{ fontWeight: 'lighter'}}>
-                                        I offer a private and relaxing space for one-to-one coaching to be undertaken in person
-                                        for those who live close by. All session can be delivered virtually, and I am happy to
-                                        offer a combination of both in person and virtual too.
+                                        I offer a private and relaxing space for one-to-one coaching to be undertaken
+                                        in person for those who live close by. All session can be delivered virtually,
+                                        and I am happy to offer a combination of both in person and virtual too.
                                     </ul>
-                                    <br/><br/><br/><br/>
-                                    Times
+                                    <br/><br/><br/>
+                                    <div className={"rectangle"} style={{height: "0.2rem", borderWidth: 0, margin: 0,
+                                        padding: 0}}>
+                                    </div>
+                                    <br/>
+                                    Times:
                                     <ul style={{ fontWeight: 'lighter'}}>
                                         <li>Evening appointments, Monday to Friday between 6pm and 8:30pm</li>
                                         <li>Saturday 8am to 2pm</li>
@@ -64,12 +68,12 @@ export default function Pricing() {
                                 <br/><br/>
                                 <ul style={{fontWeight: 'lighter'}}>
                                     The most comprehensive and transformational plan, designed to look at key lifestyle
-                                    choices and encourage small, incremental and consistent changes that deliver tangible
-                                    and notable improvements to your symptoms and enable you to move forward feeling more
-                                    energised, positive and in control of your menopause journey.
+                                    choices and encourage small, incremental and consistent changes that deliver
+                                    tangible and notable improvements to your symptoms and enable you to move forward
+                                    feeling more energised, positive and in control of your menopause journey.
                                     <br/><br/>
-                                    Topics that we cover include mindset, hydration, diet, movement, decluttering, receiving
-                                    help and support and routines.
+                                    Topics that we cover include mindset, hydration, diet, movement, decluttering,
+                                    receiving help and support and routines.
                                 </ul>
                                 <br/><br/><br/>
                                 This plan is delivered as:
@@ -89,16 +93,16 @@ export default function Pricing() {
                                 From Chaos to Calm - £325
                                 <br/><br/>
                                 <ul style={{fontWeight: 'lighter'}}>
-                                    Feeling stressed and overwhelmed - is all too common, particularly when balancing work,
-                                    family and competing demands and often leads to poor sleep as we navigate our menopause
-                                    journey.  Elevated cortisol has a profound impact on how we experience the menopause and
-                                    life in general. These sessions are designed to help you identify and protect your own
-                                    needs, resulting in a greater sense of calm and wellbeing.
+                                    Feeling stressed and overwhelmed - is all too common, particularly when balancing
+                                    work, family and competing demands and often leads to poor sleep as we navigate our
+                                    menopause journey.  Elevated cortisol has a profound impact on how we experience the
+                                    menopause and life in general. These sessions are designed to help you identify and
+                                    protect your own needs, resulting in a greater sense of calm and wellbeing.
                                     <br/><br/>
-                                    We will look at topics such as routines, receiving help and support, decluttering and the
-                                    mind and body connection. You will learn simple breathing techniques and you will develop
-                                    confidence in setting boundaries and ensuring you are better equipped to navigate life’s
-                                    demands and lead the life you truly deserve.
+                                    We will look at topics such as routines, receiving help and support, decluttering
+                                    and the mind and body connection. You will learn simple breathing techniques and you
+                                    will develop confidence in setting boundaries and ensuring you are better equipped
+                                    to navigate life’s demands and lead the life you truly deserve.
                                 </ul>
                                 <br/><br/><br/>
                                 This plan is delivered as:
@@ -118,9 +122,9 @@ export default function Pricing() {
                                 Feeling better from the inside out - £195
                                 <br/><br/>
                                 <ul style={{fontWeight: 'lighter'}}>
-                                    How we nourish our bodies can have a profound impact on how we experience our menopause
-                                    journey, and our symptoms can be greatly affected both positively and negatively by the
-                                    choices we make in both what we eat and drink.
+                                    How we nourish our bodies can have a profound impact on how we experience our
+                                    menopause journey, and our symptoms can be greatly affected both positively and
+                                    negatively by the choices we make in both what we eat and drink.
                                 </ul>
                                 <br/><br/><br/>
                                 This plan is delivered as:
@@ -139,9 +143,10 @@ export default function Pricing() {
                                 <b>Midlife & Ad Hoc Coaching - £65 per session</b>
                                 <br/><br/>
                                 <ul style={{fontWeight: 'lighter'}}>
-                                    Midlife brings many and varied challenges and opportunities.  From career, family to life
-                                    and lifestyle choices and changes.  Whatever you are looking to achieve, coaching will
-                                    enable you to identify goals, overcome challenges and move forward with clarity and purpose.
+                                    Midlife brings many and varied challenges and opportunities.  From career, family to
+                                    life and lifestyle choices and changes.  Whatever you are looking to achieve,
+                                    coaching will enable you to identify goals, overcome challenges and move forward
+                                    with clarity and purpose.
                                 </ul>
                                 <br/><br/>
                                 Minimum 3 sessions @ 60 mins
@@ -157,8 +162,8 @@ export default function Pricing() {
                                 <br/><br/>
                                 <ul style={{fontWeight: 'lighter'}}>
                                     Knowledge is power - a virtual 45 mins call to chat through your experience and help
-                                    de-mystify perimenopause and menopause and leave you with a better  understanding of some of
-                                    the potential factors that can help or hinder your journey.
+                                    de-mystify perimenopause and menopause and leave you with a better  understanding of
+                                    some of the potential factors that can help or hinder your journey.
                                 </ul>
                                 <br/><br/>
                                 Virtual 45 mins
@@ -172,7 +177,10 @@ export default function Pricing() {
                     </TextContent>
                 </div>
             </div>
-            <div className={'rectangle'} style={{borderWidth: 0, width:'100%', maxWidth: '100vw', borderRadius: 0, padding: '0 0 0 3vw', margin: 0, boxSizing: 'border-box'}}>
+            <div className={'rectangle'}
+                 style={{borderWidth: 0, width:'100%', maxWidth: '100vw',
+                     borderRadius: 0, padding: '0 0 0 3vw', margin: 0,
+                     boxSizing: 'border-box'}}>
                 <h1 style={{fontFamily: 'Brush Script MT', fontSize: '3vw'}}>
                     From those who say it best...
                 </h1>

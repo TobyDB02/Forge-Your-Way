@@ -13,7 +13,7 @@ export default function MenopauseCoaching() {
     return (
         <div align="center" className="container-col" style={{gap: "2rem"}}>
             <Link to={"/"}>
-                <img src={FYW} className="img-fluid" alt="Find Your Way logo" style={{marginTop: "1rem"}}/>
+                <img src={FYW} className="img-fluid" style={{marginTop: "1rem", width: "100%", maxWidth: '30vw'}} />
             </Link>
             <div className="about-container">
                 <div className="dashboard-wrapper">
