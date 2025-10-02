@@ -11,9 +11,13 @@ import Location from "../features/Location.jsx";
 export default function Pricing() {
     const page = 4
     return (
-        <div align="center" className="container-col" style={{gap: "2rem"}}>
+        <div align="center"
+             className="container-col"
+             style={{gap: "2rem"}}>
             <Link to={"/"}>
-                <img src={FYW} className="img-fluid" style={{marginTop: "1rem", width: "100%", maxWidth: '30vw'}} />
+                <img src={FYW}
+                     className="img-fluid"
+                     style={{marginTop: "1rem", width: "100%", maxWidth: '30vw'}} />
             </Link>
             <div className="about-container">
                 <div className="dashboard-wrapper">
@@ -22,7 +26,8 @@ export default function Pricing() {
                 <div className="content-wrapper">
                     <TextContent style={{ backgroundColor: "white", borderColor: "white" }}>
                         <div className='container-col'>
-                            <div className={'container-row'} style={{ gap: '1rem'}}>
+                            <div className={'container-row'}
+                                 style={{ gap: '1rem'}}>
                                 <div>
                                     Location:
                                     <br/>
@@ -34,7 +39,8 @@ export default function Pricing() {
                                         and I am happy to offer a combination of both in person and virtual too.
                                     </ul>
                                     <br/><br/><br/>
-                                    <div className={"rectangle"} style={{height: "0.2rem", borderWidth: 0, margin: 0,
+                                    <div className={"rectangle"}
+                                         style={{height: "0.2rem", borderWidth: 0, margin: 0,
                                         padding: 0}}>
                                     </div>
                                     <br/>
@@ -50,7 +56,8 @@ export default function Pricing() {
                                 <Location/>
                             </div>
 
-                            <div className={'rectangle'} style={{ borderColor: "white" }}>
+                            <div className={'rectangle'}
+                                 style={{ borderColor: "white" }}>
                                 Packages
                             </div>
 
@@ -60,7 +67,8 @@ export default function Pricing() {
                                 coaching is right for you and whether I am the right person for you.
                                 <br/><br/><br/>
 
-                                <div className={"rectangle"} style={{height: "0.2rem", borderWidth: 0, margin: 0,
+                                <div className={"rectangle"}
+                                     style={{height: "0.2rem", borderWidth: 0, margin: 0,
                                     padding: 0}}>
                                 </div>
                                 <br/><br/>
@@ -86,7 +94,8 @@ export default function Pricing() {
                                 Typically delivered over 10 to 12 weeks
                                 <br/><br/><br/>
 
-                                <div className={"rectangle"} style={{height: "0.2rem", borderWidth: 0, margin: 0,
+                                <div className={"rectangle"}
+                                     style={{height: "0.2rem", borderWidth: 0, margin: 0,
                                     padding: 0}}>
                                 </div>
                                 <br/><br/>
@@ -115,7 +124,8 @@ export default function Pricing() {
                                 Typically delivered over 5-6 weeks
                                 <br/><br/><br/>
 
-                                <div className={"rectangle"} style={{height: "0.2rem", borderWidth: 0, margin: 0,
+                                <div className={"rectangle"}
+                                     style={{height: "0.2rem", borderWidth: 0, margin: 0,
                                     padding: 0}}>
                                 </div>
                                 <br/><br/>
@@ -136,7 +146,8 @@ export default function Pricing() {
                                 Typically delivered over 4 weeks
                                 <br/><br/><br/>
 
-                                <div className={"rectangle"} style={{height: "0.2rem", borderWidth: 0, margin: 0,
+                                <div className={"rectangle"}
+                                     style={{height: "0.2rem", borderWidth: 0, margin: 0,
                                     padding: 0}}>
                                 </div>
                                 <br/><br/>
@@ -154,7 +165,8 @@ export default function Pricing() {
                                 Typically delivered over 3 to 6 weeks
                                 <br/><br/><br/>
 
-                                <div className={"rectangle"} style={{height: "0.2rem", borderWidth: 0, margin: 0,
+                                <div className={"rectangle"}
+                                     style={{height: "0.2rem", borderWidth: 0, margin: 0,
                                     padding: 0}}>
                                 </div>
                                 <br/><br/>
@@ -169,7 +181,8 @@ export default function Pricing() {
                                 Virtual 45 mins
                                 <br/><br/><br/>
 
-                                <div className={"rectangle"} style={{height: "0.2rem", borderWidth: 0, margin: 0,
+                                <div className={"rectangle"}
+                                     style={{height: "0.2rem", borderWidth: 0, margin: 0,
                                     padding: 0}}>
                                 </div>
                             </ul>

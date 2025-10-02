@@ -5,7 +5,8 @@ export default function Reviews() {
     return (
         <div style={{ overflowX: "auto", width: "100%"}}>
 
-            <div className="container-row" style={{ justifyContent: "center", gap: "1rem",
+            <div className="container-row"
+                 style={{ justifyContent: "center", gap: "1rem",
                 paddingLeft: "2rem", flexWrap: "nowrap",
                 display: "flex", minWidth: "fit-content" }}>
 

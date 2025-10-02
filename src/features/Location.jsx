@@ -19,8 +19,11 @@ export default function Location() {
                 <img
                     src={Map}
                     alt="Local town"
-                    className="w-64 h-auto rounded-lg shadow-md cursor-pointer hover:opacity-80 transition textcontent-img"
-                    style={{ cursor: "pointer", width: "100%", height: 'auto', maxWidth: '50vw' }}
+                    className="w-64 h-auto rounded-lg
+                    shadow-md cursor-pointer hover:opacity-80
+                    transition textcontent-img"
+                    style={{ cursor: "pointer", width: "100%", height: 'auto',
+                        maxWidth: '50vw' }}
                 />
             </a>
         </div>
