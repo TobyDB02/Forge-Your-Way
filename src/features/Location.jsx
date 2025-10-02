@@ -1,16 +1,12 @@
 import React from "react";
+import Map from "../assets/Map.png"
 
 export default function Location() {
-    const latitude = 52.51334;
-    const longitude = 1.00301;
+    const latitude = 52.51830;
+    const longitude = 1.01601;
 
-    // Google Maps URL
     const googleMapsUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
-
-    // Apple Maps URL
     const appleMapsUrl = `http://maps.apple.com/?ll=${latitude},${longitude}`;
-
-    // Detect Apple device
     const isApple = /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent);
 
     return (
@@ -21,9 +17,10 @@ export default function Location() {
                 rel="noopener noreferrer"
             >
                 <img
-                    src="../assets/Map.png"
+                    src={Map}
                     alt="Local town"
-                    className="w-64 h-auto rounded-lg shadow-md cursor-pointer hover:opacity-80 transition"
+                    className="w-64 h-auto rounded-lg shadow-md cursor-pointer hover:opacity-80 transition textcontent-img"
+                    style={{ cursor: "pointer", width: "100%", height: 'auto', maxWidth: '50vw' }}
                 />
             </a>
         </div>
