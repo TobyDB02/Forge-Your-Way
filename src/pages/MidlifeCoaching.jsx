@@ -11,22 +11,44 @@ import React from "react";
 export default function MidlifeCoaching() {
     const page = 3;
     return (
-        <div align="center"
-             className="container-col"
-             style={{gap: "2rem"}}>
-            <Link to={"/"}>
-                <img src={FYW}
-                     className="img-fluid"
-                     style={{marginTop: "1rem", width: "100%", maxWidth: '30vw'}} />
+        <div
+            align="center"
+            className="container-col"
+            style={{
+                gap: "2rem"
+        }}
+        >
+            <Link
+                to={"/"}>
+                <img
+                    src={FYW}
+                    className="img-fluid"
+                    style={{
+                        marginTop: "1rem",
+                        width: "100%",
+                        maxWidth: '30vw'
+                }}
+                />
             </Link>
-            <div className="container-row">
-                <div className="about-container">
-                    <div className="dashboard-wrapper">
-                        <Dashboard page={page} />
+            <div
+                className="container-row">
+                <div
+                    className="about-container">
+                    <div
+                        className="dashboard-wrapper">
+                        <Dashboard
+                            page={page}
+                        />
                     </div>
-                    <div className="content-wrapper">
-                        <TextContent image={Midl_img}
-                                     style={{ backgroundColor: "white", borderColor: "white" }}>
+                    <div
+                        className="content-wrapper">
+                        <TextContent
+                            image={Midl_img}
+                            style={{
+                                backgroundColor: "white",
+                                borderColor: "white"
+                        }}
+                        >
                             <ul>
                                 Midlife brings many, and varied challenges and opportunities.  From career, family, to life
                                 and lifestyle choices and changes.  Whatever you are looking to achieve, coaching will
@@ -45,11 +67,24 @@ export default function MidlifeCoaching() {
                     </div>
                 </div>
             </div>
-            <div className={'rectangle'}
-                 style={{borderWidth: 0, width:'100%', maxWidth: '100vw',
-                     borderRadius: 0, padding: '0 0 0 3vw', margin: 0,
-                     boxSizing: 'border-box'}}>
-                <h1 style={{fontFamily: 'Brush Script MT', fontSize: '3vw'}}>
+            <div
+                className={'rectangle'}
+                style={{
+                    borderWidth: 0,
+                    width:'100%',
+                    maxWidth: '100vw',
+                    borderRadius: 0,
+                    padding: '0 0 0 3vw',
+                    margin: 0,
+                    boxSizing: 'border-box'
+            }}
+            >
+                <h1
+                    style={{
+                        fontFamily: 'Brush Script MT',
+                        fontSize: '3vw'
+                }}
+                >
                     From those who say it best...
                 </h1>
             </div>

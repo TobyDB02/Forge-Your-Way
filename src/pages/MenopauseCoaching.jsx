@@ -11,21 +11,42 @@ import Reviews from "../frames/Reviews.jsx";
 export default function MenopauseCoaching() {
     const page = 2
     return (
-        <div align="center"
-             className="container-col"
-             style={{gap: "2rem"}}>
-            <Link to={"/"}>
-                <img src={FYW}
-                     className="img-fluid"
-                     style={{marginTop: "1rem", width: "100%", maxWidth: '30vw'}} />
+        <div
+            align="center"
+            className="container-col"
+            style={{
+                gap: "2rem"
+        }}
+        >
+            <Link
+                to={"/"}>
+                <img
+                    src={FYW}
+                    className="img-fluid"
+                    style={{
+                        marginTop: "1rem",
+                        width: "100%",
+                        maxWidth: '30vw'
+                }}
+                />
             </Link>
-            <div className="about-container">
-                <div className="dashboard-wrapper">
-                    <Dashboard page={page}/>
+            <div
+                className="about-container">
+                <div
+                    className="dashboard-wrapper">
+                    <Dashboard
+                        page={page}
+                    />
                 </div>
-                <div className="content-wrapper">
-                    <TextContent image={Meno_img}
-                                 style={{ backgroundColor: "white", borderColor: "white" }}>
+                <div
+                    className="content-wrapper">
+                    <TextContent
+                        image={Meno_img}
+                        style={{
+                            backgroundColor: "white",
+                            borderColor: "white"
+                    }}
+                    >
                         <ul>
                             Coaching is a deeply personal experience so deciding who you would like to work with you is
                             very important. I pride myself on being a professional, trained, experienced and empathetic
@@ -55,11 +76,24 @@ export default function MenopauseCoaching() {
                     </TextContent>
                 </div>
             </div>
-            <div className={'rectangle'}
-                 style={{borderWidth: 0, width:'100%', maxWidth: '100vw',
-                     borderRadius: 0, padding: '0 0 0 3vw', margin: 0,
-                     boxSizing: 'border-box'}}>
-                <h1 style={{fontFamily: 'Brush Script MT', fontSize: '3vw'}}>
+            <div
+                className={'rectangle'}
+                style={{
+                    borderWidth: 0,
+                    width:'100%',
+                    maxWidth: '100vw',
+                    borderRadius: 0,
+                    padding: '0 0 0 3vw',
+                    margin: 0,
+                    boxSizing: 'border-box'
+            }}
+            >
+                <h1
+                    style={{
+                        fontFamily: 'Brush Script MT',
+                        fontSize: '3vw'
+                }}
+                >
                     From those who say it best...
                 </h1>
             </div>

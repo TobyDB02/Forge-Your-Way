@@ -8,28 +8,58 @@ import TextContent from "../components/TextContent.jsx";
 import React from "react";
 import Contact from "../frames/Contact.jsx";
 import Reviews from "../frames/Reviews.jsx";
+import Privacy from "../features/PrivacyNotice.jsx";
 
 export default function HomePage() {
     return (
-        <div align="center"
-             className="container-col"
-             style={{gap: "2rem"}}>
-            <img src={FYW}
-                 className="img-fluid"
-                 style={{marginTop: "1rem", width: "100%", maxWidth: '30vw'}} />
-            <div className="container-row">
-                <div style={{padding: "1vw"}}>
+        <div
+            align="center"
+            className="container-col"
+            style={{
+                gap: "2rem"
+        }}
+        >
+            <Privacy/>
+            <img
+                src={FYW}
+                className="img-fluid"
+                style={{
+                    marginTop: "1rem",
+                    width: "100%",
+                    maxWidth: '30vw'
+            }}
+            />
+            <div
+                className="container-row">
+                <div
+                    style={{
+                        padding: "1vw"
+                }
+                }>
                     <Dashboard/>
-                    <TextContent image={Homeimg}
-                                 className="dash-content"
-                                 style={{ backgroundColor: "white", borderColor: "white", maxWidth: '100%',
-                                     maxHeight: 'auto', paddingTop: '2rem' }}>
+                    <TextContent
+                        image={Homeimg}
+                        className="dash-content"
+                        style={{
+                            backgroundColor: "white",
+                            borderColor: "white",
+                            maxWidth: '100%',
+                            maxHeight: 'auto',
+                            paddingTop: '2rem'
+                    }}
+                    >
                         <div>
                             <ul>
                                 Thrive through midlife, menopause and beyond...
                                 <br/><br/>
                                 One to one transformative coaching leading to:
-                                <ul style={{ textAlign: 'left', paddingLeft: '2rem', margin: '1rem 0' }}>
+                                <ul
+                                    style={{
+                                        textAlign: 'left',
+                                        paddingLeft: '2rem',
+                                        margin: '1rem 0'
+                                }}
+                                >
                                     <li>A renewed sense of purpose</li>
                                     <li>A renewed sense of self</li>
                                     <li>Reconnection with past joys</li>
@@ -48,11 +78,24 @@ export default function HomePage() {
                     </TextContent>
                 </div>
             </div>
-            <div className={'rectangle'}
-                 style={{borderWidth: 0, width:'100%', maxWidth: '100vw',
-                     borderRadius: 0, padding: '0 0 0 3vw', margin: 0,
-                     boxSizing: 'border-box'}}>
-                <h1 style={{fontFamily: 'Brush Script MT', fontSize: '3vw'}}>
+            <div
+                className={'rectangle'}
+                style={{
+                    borderWidth: 0,
+                    width:'100%',
+                    maxWidth: '100vw',
+                    borderRadius: 0,
+                    padding: '0 0 0 3vw',
+                    margin: 0,
+                    boxSizing: 'border-box'
+            }}
+            >
+                <h1
+                    style={{
+                        fontFamily: 'Brush Script MT',
+                        fontSize: '3vw'
+                }}
+                >
                     From those who say it best...
                 </h1>
             </div>

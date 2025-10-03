@@ -13,23 +13,44 @@ import Reviews from "../frames/Reviews.jsx";
 export default function About() {
     const page = 1
     return (
-        <div align="center"
-             className="container-col"
-             style={{gap: "2rem"}}>
-            <Link to={"/"}>
-                <img src={FYW}
-                     className="img-fluid"
-                     style={{marginTop: "1rem", width: "100%", maxWidth: '30vw'}} />
+        <div
+            align="center"
+            className="container-col"
+            style={{gap: "2rem"}}>
+            <Link
+                to={"/"}>
+                <img
+                    src={FYW}
+                    className="img-fluid"
+                    style={{
+                        marginTop: "1rem",
+                        width: "100%",
+                        maxWidth: '30vw'
+                }}
+                />
             </Link>
-            <div className="about-container">
-                <div className="dashboard-wrapper">
-                    <Dashboard page={page}/>
+            <div
+                className="about-container">
+                <div
+                    className="dashboard-wrapper">
+                    <Dashboard
+                        page={page}
+                    />
                 </div>
-                <div className="content-wrapper">
-                    <TextContent image={glass}
-                                 style={{ backgroundColor: "white", borderColor: "white" }}>
-                        <div className="container-row"
-                             style={{ gap: "2rem" }}>
+                <div
+                    className="content-wrapper">
+                    <TextContent
+                        image={glass}
+                        style={{
+                            backgroundColor: "white",
+                            borderColor: "white"
+                    }}
+                    >
+                        <div
+                            className="container-row"
+                            style={{ gap: "2rem"
+                        }}
+                        >
                             I’ve spent nearly 30 years working in senior HR roles, and for the last decade I’ve been an
                             ILM Level 7 qualified coach—helping people find their own answers, break through challenges,
                             and achieve what matters most to them.
@@ -61,11 +82,24 @@ export default function About() {
                     </TextContent>
                 </div>
             </div>
-            <div className={'rectangle'}
-                 style={{borderWidth: 0, width:'100%', maxWidth: '100vw',
-                     borderRadius: 0, padding: '0 0 0 3vw', margin: 0,
-                     boxSizing: 'border-box'}}>
-                <h1 style={{fontFamily: 'Brush Script MT', fontSize: '3vw'}}>
+            <div
+                className={'rectangle'}
+                style={{
+                    borderWidth: 0,
+                    width:'100%',
+                    maxWidth: '100vw',
+                    borderRadius: 0,
+                    padding: '0 0 0 3vw',
+                    margin: 0,
+                    boxSizing: 'border-box'
+            }}
+            >
+                <h1
+                    style={{
+                        fontFamily: 'Brush Script MT',
+                        fontSize: '3vw'
+                }}
+                >
                     From those who say it best...
                 </h1>
             </div>
