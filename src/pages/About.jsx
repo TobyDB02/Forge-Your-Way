@@ -9,8 +9,7 @@ import TextContent from "../components/TextContent.jsx";
 import Contact from "../frames/Contact.jsx";
 import Reviews from "../frames/Reviews.jsx";
 import Privacy from "../features/PrivacyNotice.jsx";
-import Meno_img from "../assets/Meno_img.png";
-import img_meno from "../assets/Image_Meno.png";
+import img_meno from "../assets/meno_img.png";
 
 export default function About() {
     const page = 1

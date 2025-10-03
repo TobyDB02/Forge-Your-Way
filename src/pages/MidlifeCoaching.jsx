@@ -4,7 +4,6 @@ import Contact from "../frames/Contact.jsx";
 import Reviews from "../frames/Reviews.jsx";
 import "../styles/layout.css"
 import FYW from "../assets/FYW.png";
-import Midl_img from "../assets/Midl_img.png";
 import {Link} from "react-router-dom";
 import React from "react";
 import Privacy from "../features/PrivacyNotice.jsx";

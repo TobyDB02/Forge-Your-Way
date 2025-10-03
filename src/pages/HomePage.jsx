@@ -1,5 +1,5 @@
 import FYW from "../assets/FYW.png"
-import Homeimg from "../assets/Homeimg.png"
+import Homeimg from "../assets/img_home.png"
 import Dashboard from "../frames/Dashboard.jsx";
 import "../index.css"
 import "../styles/layout.css"

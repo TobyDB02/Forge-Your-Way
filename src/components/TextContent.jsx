@@ -16,8 +16,8 @@ export default function TextContent({ children, className, width, image, style }
                 <div
                     className="textcontent-img"
                     style={{
-                        maxWidth: '20vw',
-                        width: '20vw'
+                        maxWidth: '25vw',
+                        width: '25vw'
                 }}
                 >
                     <img

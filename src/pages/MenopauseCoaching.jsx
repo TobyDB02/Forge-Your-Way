@@ -1,14 +1,13 @@
 import Dashboard from "../frames/Dashboard.jsx";
 import "../styles/layout.css"
 import FYW from "../assets/FYW.png";
-import Meno_img from "../assets/Meno_img.png";
+import Meno_img from "../assets/home_img.png";
 import {Link} from "react-router-dom";
 import React from "react";
 import TextContent from "../components/TextContent.jsx";
 import Contact from "../frames/Contact.jsx";
 import Reviews from "../frames/Reviews.jsx";
 import Privacy from "../features/PrivacyNotice.jsx";
-import img_meno from "../assets/Image_Meno.png";
 
 export default function MenopauseCoaching() {
     const page = 2
@@ -44,7 +43,7 @@ export default function MenopauseCoaching() {
                 <div
                     className="content-wrapper">
                     <TextContent
-                        image={img_meno}
+                        image={Meno_img}
                         style={{
                             backgroundColor: "white",
                             borderColor: "white"
