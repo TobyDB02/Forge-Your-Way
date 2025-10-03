@@ -6,6 +6,7 @@ import TextContent from "../components/TextContent.jsx";
 
 import ilm from "../assets/ilm_lv7.png";
 import WoaCS from "../assets/WoaCS.png";
+import { Link } from 'react-router-dom';
 
 export default function Contact() {
 
@@ -63,15 +64,34 @@ export default function Contact() {
                             gap: "2rem"
                     }}
                     >
-                        <ul
-                            style={{
-                                paddingTop: "3rem",
-                                paddingLeft: "40rem",
-                                whiteSpace: "pre"
+                        <div
+                            className="container-col"
+                        style={{
+                            gap: "2rem",
                         }}
                         >
-                            Contact me at:     mornadb@gmail.com
-                        </ul>
+                            <ul
+                                style={{
+                                    paddingTop: "3rem",
+                                    paddingLeft: "40rem",
+                                    whiteSpace: "pre"
+                                }}
+                            >
+                                Contact me at:     mornadb@gmail.com
+                            </ul>
+                            <Link
+                                to={'/privacy'}
+                                state={{
+                                    from: location.pathname
+                            }}
+                                style={{
+                                    paddingLeft: "55rem",
+                                    color: "black"
+                                }}
+                            >
+                                Privacy Policy
+                            </Link>{" "}
+                        </div>
                     </div>
                 </div>
             </TextContent>

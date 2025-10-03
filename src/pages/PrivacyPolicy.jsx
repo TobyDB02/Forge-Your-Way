@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
-import {Link} from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 export default function PrivacyPolicy() {
-    const [setShowModal] = useState(false);
+    const [showModal, setShowModal] = useState(false);
+    const location = useLocation();
+    const navigate = useNavigate();
 
     useEffect(() => {
         const hasSeen = localStorage.getItem("seenPrivacyNotice");
@@ -14,6 +16,12 @@ export default function PrivacyPolicy() {
     const handleClose = () => {
         localStorage.setItem("seenPrivacyNotice", "true");
         setShowModal(false);
+
+        if (location.state && location.state.from) {
+            navigate(location.state.from);
+        } else {
+            navigate("/");
+        }
     };
 
     return(
@@ -24,7 +32,7 @@ export default function PrivacyPolicy() {
                 paddingLeft: '1rem'
         }}
         >
-            <p>
+            <section>
                 <h1>Privacy Policy</h1>
 
                 <p
@@ -196,41 +204,30 @@ export default function PrivacyPolicy() {
                 Website: https://ico.org.uk
                 <br/>
                 Helpline: 0303 123 1113
-
-            </p>
-
-            <div
-                style={{
-                    display: 'flex',
-                    justifyContent: "center",
-                    alignItems: "center",
-                    paddingBottom: "1rem",
-            }}
-            >
-                <button
-                    onClick={handleClose}
+                <div
                     style={{
-                        marginTop: "1rem",
-                        padding: "0.5rem 1.5rem",
-                        border: "none",
-                        borderRadius: "6px",
-                        background: "#2E3363",
-                        color: "white",
-                        cursor: "pointer",
+                        display: 'flex',
+                        justifyContent: "center",
+                        alignItems: "center",
+                        paddingBottom: "1rem",
                     }}
                 >
-                    <Link
-                        to="/"
+                    <button
+                        onClick={handleClose}
                         style={{
-                            color: "White",
-                            justifyContent: "center",
-                            alignItems: "center"
-                    }}
+                            marginTop: "1rem",
+                            padding: "0.5rem 1.5rem",
+                            border: "none",
+                            borderRadius: "6px",
+                            background: "#2E3363",
+                            color: "white",
+                            cursor: "pointer",
+                        }}
                     >
                         I understand
-                    </Link>{" "}
-                </button>
-            </div>
+                    </button>
+                </div>
+            </section>
         </div>
         )
 }

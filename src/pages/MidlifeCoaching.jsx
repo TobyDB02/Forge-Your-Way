@@ -7,6 +7,8 @@ import FYW from "../assets/FYW.png";
 import Midl_img from "../assets/Midl_img.png";
 import {Link} from "react-router-dom";
 import React from "react";
+import Privacy from "../features/PrivacyNotice.jsx";
+import img_meno from "../assets/Image_Meno.png";
 
 export default function MidlifeCoaching() {
     const page = 3;
@@ -18,6 +20,7 @@ export default function MidlifeCoaching() {
                 gap: "2rem"
         }}
         >
+            <Privacy/>
             <Link
                 to={"/"}>
                 <img
@@ -43,25 +46,48 @@ export default function MidlifeCoaching() {
                     <div
                         className="content-wrapper">
                         <TextContent
-                            image={Midl_img}
+                            image={img_meno}
                             style={{
                                 backgroundColor: "white",
                                 borderColor: "white"
                         }}
                         >
-                            <ul>
-                                Midlife brings many, and varied challenges and opportunities.  From career, family, to life
+                            <ul
+                                style={{
+                                    fontWeight: 'lighter'
+                                }}
+                            >
+                                <span
+                                    style={{
+                                        fontWeight: "bold"
+                                    }}
+                                    >
+                                    Midlife{' '}
+                                </span>
+                                brings many, and varied challenges and opportunities.  From career, family, to life
                                 and lifestyle choices and changes.  Whatever you are looking to achieve, coaching will
                                 enable you to identify goals, overcome challenges and move forward with clarity and purpose.
                                 <br/><br/>
-                                Together we will
-                                <br/><br/>
+                                <p
+                                style={{
+                                    fontWeight: "bold"
+                                }}
+                                >
+                                    Together we will:
+                                </p>
                                 <li>Explore your goals</li>
                                 <li>Identify meaningful actions that bring about positive change</li>
                                 <li>Achieve results</li>
                                 <li>Have forges a clear path ahead... your way</li>
                                 <br/><br/>
-                                Ready to forge your path … Contact Me
+                                Ready to forge your path? …
+                                <span
+                                    style={{
+                                        fontWeight: 'bold',
+                                    }}
+                                    >
+                                    {' '}Get in touch
+                                </span>
                             </ul>
                         </TextContent>
                     </div>

@@ -7,6 +7,8 @@ import React from "react";
 import TextContent from "../components/TextContent.jsx";
 import Contact from "../frames/Contact.jsx";
 import Reviews from "../frames/Reviews.jsx";
+import Privacy from "../features/PrivacyNotice.jsx";
+import img_meno from "../assets/Image_Meno.png";
 
 export default function MenopauseCoaching() {
     const page = 2
@@ -18,6 +20,7 @@ export default function MenopauseCoaching() {
                 gap: "2rem"
         }}
         >
+            <Privacy/>
             <Link
                 to={"/"}>
                 <img
@@ -41,27 +44,40 @@ export default function MenopauseCoaching() {
                 <div
                     className="content-wrapper">
                     <TextContent
-                        image={Meno_img}
+                        image={img_meno}
                         style={{
                             backgroundColor: "white",
                             borderColor: "white"
                     }}
                     >
-                        <ul>
-                            Coaching is a deeply personal experience so deciding who you would like to work with you is
+                        <ul
+                        style={{
+                            fontWeight: "lighter",
+                        }}
+                        >
+                            <span
+                            style={{
+                                fontWeight: "bold"
+                            }}
+                            >
+                               Coaching{' '}
+                            </span>
+                            is a deeply personal experience so deciding who you would like to work with you is
                             very important. I pride myself on being a professional, trained, experienced and empathetic
                             coach who will support, challenge and encourage you throughout our time together to achieve
                             the results you want to achieve.
-                            <br/><br/>
-                            Before we start you will have a free 30 min discovery call to enable you to decide if
-                            coaching is right for you and whether I am the right person for you.
                             <br/><br/>
                             I will be your trusted partner to hear, listen and understand your own experience and invite
                             you to take forward actions that will be right for you and have the greatest impact on your
                             life today.
                             <br/><br/>
-                            If you chose to work with me, you will
-                            <br/><br/>
+                            <p
+                            style={{
+                                fontWeight: "bold"
+                            }}
+                            >
+                                If you chose to work with me, you will
+                            </p>
                                 <li>Feel informed about the menopause and your unique experience</li>
                                 <li>Feel listened to, heard and supported</li>
                                 <li>Discover the small, incremental changes that work for you</li>
@@ -71,7 +87,15 @@ export default function MenopauseCoaching() {
                                 <li>Have a sense of the 'old you' back again</li>
                                 <li>Know that you are taking better care of yourself</li>
                                 <li>Achieve results</li>
-                                <li>Have forged a clear path ahead… your way</li>
+                                <li>Have forged a clear path ahead…
+                                    <span
+                                        style={{
+                                            fontWeight: "bold"
+                                        }}
+                                    >
+                                        {' '}your way
+                                    </span>
+                                </li>
                         </ul>
                     </TextContent>
                 </div>

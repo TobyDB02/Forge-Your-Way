@@ -50,14 +50,25 @@ export default function HomePage() {
                     >
                         <div>
                             <ul>
-                                Thrive through midlife, menopause and beyond...
-                                <br/><br/>
+                                <span
+                                    style={{
+                                        fontFamily: 'Brush Script MT',
+                                        fontWeight: 'lighter',
+                                        fontSize: '4rem',
+                                    }}
+                                    >
+                                    Thrive through midlife, menopause and beyond...
+                                </span>
                                 One to one transformative coaching leading to:
+                                <br/><br/>
                                 <ul
                                     style={{
                                         textAlign: 'left',
-                                        paddingLeft: '2rem',
-                                        margin: '1rem 0'
+                                        paddingLeft: '20rem',
+                                        margin: '1rem 0',
+                                        width: 'fit-content',
+                                        listStylePosition: 'inside',
+                                        fontWeight: 'lighter'
                                 }}
                                 >
                                     <li>A renewed sense of purpose</li>

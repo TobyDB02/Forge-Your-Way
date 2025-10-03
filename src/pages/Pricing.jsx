@@ -7,6 +7,7 @@ import React from "react";
 import TextContent from "../components/TextContent.jsx";
 import Contact from "../frames/Contact.jsx";
 import Location from "../features/Location.jsx";
+import Privacy from "../features/PrivacyNotice.jsx";
 
 export default function Pricing() {
     const page = 4
@@ -18,6 +19,7 @@ export default function Pricing() {
                 gap: "2rem"
         }}
         >
+            <Privacy/>
             <Link
                 to={"/"}>
                 <img
