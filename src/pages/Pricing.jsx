@@ -86,7 +86,7 @@ export default function Pricing() {
                                             fontWeight: 'lighter'
                                     }}
                                     >
-                                        <li>Evening appointments, Monday to Friday between 6pm and 8:30pm</li>
+                                        <li>Evening appointments, Tuesday to Friday between 6pm and 8:30pm</li>
                                         <li>Saturday 8am to 2pm</li>
                                         <li>Sunday 9am to 1pm</li>
                                     </ul>
@@ -120,7 +120,7 @@ export default function Pricing() {
                                         padding: 0}}>
                                 </div>
                                 <br/><br/>
-                                Transformational Menopause Plan - £495
+                                Transformational Menopause Plan - £495 (flexible payment options)
                                 <br/><br/>
                                 <ul
                                     style={{
@@ -161,7 +161,7 @@ export default function Pricing() {
                                 >
                                 </div>
                                 <br/><br/>
-                                From Chaos to Calm - £325
+                                From Chaos to Calm - £325 (flexible payment options)
                                 <br/><br/>
                                 <ul
                                     style={{
@@ -205,7 +205,7 @@ export default function Pricing() {
                                 >
                                 </div>
                                 <br/><br/>
-                                Feeling better from the inside out - £195
+                                Feeling better from the inside out - £195 (flexible payment options)
                                 <br/><br/>
                                 <ul
                                     style={{

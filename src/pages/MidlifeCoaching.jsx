@@ -77,7 +77,7 @@ export default function MidlifeCoaching() {
                                 <li>Explore your goals</li>
                                 <li>Identify meaningful actions that bring about positive change</li>
                                 <li>Achieve results</li>
-                                <li>Have forges a clear path ahead... your way</li>
+                                <li>Have forged a clear path ahead... your way</li>
                                 <br/><br/>
                                 Ready to forge your path? …
                                 <span

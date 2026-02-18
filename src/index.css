@@ -29,8 +29,71 @@ body {
   align-items: flex-start;
 }
 
+.mobileReviews {
+    padding: 0;
+    background-color: white;
+    width: 20rem;
+    height: 20rem;
+    overflow-y: auto;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.review-text {
+    font-size: 1vw;
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.homeImg{
+    background-color: white;
+    border-color: white;
+    max-width: 100%;
+    height: auto;
+    padding-top: 2rem;
+}
+
+
 .text {
-  font-size: 1vw;
-  text-align: center;
-  color: white;
+    font-size: 1vw;
+    text-align: center;
+    color: white;
+}
+
+.titleBar{
+    font-family: Brush Script MT;
+    font-size: 3vw;
+}
+
+.homeTxt{
+    font-family: Brush Script MT;
+    font-weight: lighter;
+    font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+    .homeTxt{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .textMobile {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .titleBar{
+        font-size: 30px
+    }
+}
+
+@media (max-width: 768px) {
+    .mobileReviews {
+        width: 250px;
+        height: 250px;
+    }
 }

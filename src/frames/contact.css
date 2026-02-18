@@ -4,3 +4,16 @@
     border: 0;
     border-radius: 0;
 }
+
+.contact-text {
+    display: flex;
+    padding-top: 3rem;
+    white-space: pre;
+    justify-content: right;
+}
+
+@media (max-width: 768px) {
+    .contact-text {
+        font-size: 16px;
+    }
+}

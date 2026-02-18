@@ -11,6 +11,7 @@ import Reviews from "../frames/Reviews.jsx";
 import Privacy from "../features/PrivacyNotice.jsx";
 
 export default function HomePage() {
+    const isMobile = window.innerWidth <= 768;
     return (
         <div
             align="center"
@@ -39,23 +40,14 @@ export default function HomePage() {
                     <Dashboard/>
                     <TextContent
                         image={Homeimg}
-                        className="dash-content"
-                        style={{
-                            backgroundColor: "white",
-                            borderColor: "white",
-                            maxWidth: '100%',
-                            maxHeight: 'auto',
-                            paddingTop: '2rem'
-                    }}
+                        className="dash-content homeImg"
                     >
                         <div>
-                            <ul>
+                            <ul
+                            className="textMobile"
+                            >
                                 <span
-                                    style={{
-                                        fontFamily: 'Brush Script MT',
-                                        fontWeight: 'lighter',
-                                        fontSize: '4rem',
-                                    }}
+                                    className="homeTxt"
                                     >
                                     Thrive through midlife, menopause and beyond...
                                 </span>
@@ -64,12 +56,12 @@ export default function HomePage() {
                                 <ul
                                     style={{
                                         textAlign: 'left',
-                                        paddingLeft: '20rem',
-                                        margin: '1rem 0',
+                                        paddingLeft: isMobile ? 0 : '20rem',
+                                        margin: isMobile ? 0 : '1rem 0',
                                         width: 'fit-content',
                                         listStylePosition: 'inside',
-                                        fontWeight: 'lighter'
-                                }}
+                                        fontWeight: 'lighter',
+                                    }}
                                 >
                                     <li>A renewed sense of purpose</li>
                                     <li>A renewed sense of self</li>
@@ -102,10 +94,7 @@ export default function HomePage() {
             }}
             >
                 <h1
-                    style={{
-                        fontFamily: 'Brush Script MT',
-                        fontSize: '3vw'
-                }}
+                    className='titleBar'
                 >
                     From those who say it best...
                 </h1>

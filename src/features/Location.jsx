@@ -1,5 +1,6 @@
 import React from "react";
 import Map from "../assets/Map.png"
+import "../index.css"
 
 export default function Location() {
     const latitude = 52.51830;
@@ -29,7 +30,8 @@ export default function Location() {
                         cursor: "pointer",
                         width: "100%",
                         height: 'auto',
-                        maxWidth: '50vw'
+                        maxWidth: '50vw',
+                        display: 'flex',
                 }}
                 />
             </a>
