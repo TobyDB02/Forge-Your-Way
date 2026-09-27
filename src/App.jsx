@@ -2,7 +2,7 @@ import React from "react";
 
 import HomePage from "./pages/HomePage";
 import About from "./pages/About";
-import MenoPauseCoaching from "./pages/MenoPauseCoaching";
+import MenoPauseCoaching from "./pages/MenopauseCoaching";
 import MidlifeCoaching from "./pages/MidlifeCoaching";
 import Pricing from "./pages/Pricing";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
