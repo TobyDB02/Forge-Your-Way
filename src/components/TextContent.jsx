@@ -1,24 +1,33 @@
+
 import "../styles/textContent.css"
 
-export default function TextContent({ children, className, width, image, style }) {
+export default function TextContent({
+    children,
+    className,
+    width,
+    image,
+    mobileImage,
+    style
+}) {
     return (
         <div
             className={
-            "rectangle text " +
+                "rectangle text " +
                 (className || "")
-        }
-             style={{
-                 fontWeight: "bold",
-                 color: "#2E3363",
-                 ...(width ? { width } : {}),
-                 ...style }}>
+            }
+            style={{
+                color: "#2E3363",
+                ...(width ? { width } : {}),
+                ...style
+            }}
+        >
             {image && (
                 <div
                     className="textcontent-img"
                     style={{
-                        maxWidth: '25vw',
-                        width: '25vw'
-                }}
+                        maxWidth: "25vw",
+                        width: "25vw"
+                    }}
                 >
                     <img
                         src={image}
@@ -26,8 +35,17 @@ export default function TextContent({ children, className, width, image, style }
                     />
                 </div>
             )}
-            <div
-                className="textcontent-body">
+
+            {mobileImage && (
+                <div className="textcontent-mobile-img">
+                    <img
+                        src={mobileImage}
+                        alt="Decorative"
+                    />
+                </div>
+            )}
+
+            <div className="textcontent-body">
                 {children}
             </div>
         </div>

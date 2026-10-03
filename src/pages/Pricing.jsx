@@ -67,7 +67,7 @@ export default function Pricing() {
                                     }}
                                     >
                                         I offer a private and relaxing space for one-to-one coaching to be undertaken
-                                        in person for those who live close by. All session can be delivered virtually,
+                                        in person for those who live close by. All sessions can be delivered virtually,
                                         and I am happy to offer a combination of both in person and virtual too.
                                     </ul>
                                     <br/><br/><br/>

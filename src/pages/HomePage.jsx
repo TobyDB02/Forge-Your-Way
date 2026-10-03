@@ -67,6 +67,15 @@ export default function HomePage() {
                                     <li>A renewed sense of self</li>
                                     <li>Reconnection with past joys</li>
                                 </ul>
+                                <TextContent
+                                    mobileImage={Homeimg}
+                                    className="homeImg"
+                                    style={{
+                                        margin: "2rem auto 0",
+                                        width: "100%",
+                                        maxWidth: "30vw",
+                                    }}
+                                    />
                                 <br/><br/>
                                 Whether you are feeling overwhelmed with menopause symptoms, feeling you’ve lost your
                                 sense of self, or navigating the many ups and downs of midlife, I’m here to tell you

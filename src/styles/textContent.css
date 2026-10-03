@@ -57,8 +57,23 @@
     margin-bottom: 0.5rem;
 }
 
+.textcontent-mobile-img {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .textcontent-img {
         display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .textcontent-mobile-img {
+        display: block;
+    }
+
+    .textcontent-mobile-img img {
+        width: 100%;
+        height: auto;
     }
 }
